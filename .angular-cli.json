@@ -1,0 +1,5 @@
+{
+  "apps": [{
+    "styles": ["../node_modules/wijmo/styles/wijmo.css","styles.css"]
+  }]
+}

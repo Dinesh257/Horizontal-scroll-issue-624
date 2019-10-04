@@ -1,0 +1,14 @@
+
+<wj-flex-grid #grid [itemsSource]="data" (initialized)="init(grid)" (click)="gridClickHandler($event,grid)" >
+  <wj-flex-grid-column width="*" [binding]="'id'" [header]="'ID'"></wj-flex-grid-column>
+  <wj-flex-grid-column width="*" [binding]="'country'" [header]="'Country'"></wj-flex-grid-column>
+  <wj-flex-grid-column width="*" [binding]="'date'" [header]="'Date'"></wj-flex-grid-column>
+  <wj-flex-grid-column width="*" [binding]="'sales'" [header]="'Sales'"></wj-flex-grid-column>
+</wj-flex-grid>
+<div *ngIf="htInfo">
+  <ul>
+    <li>CellType:- {{getCellType(htInfo.cellType)}}</li>
+    <li>Row index:- {{htInfo.row}}</li>
+    <li>Col index:- {{htInfo.col}}</li>
+  </ul>
+</div>
